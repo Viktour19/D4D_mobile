@@ -1,0 +1,6 @@
+We want to explore the data a little bit.
+First, we look at the Antenna-to-Antenna network; Node: antenna (or later we can try sub-prefecture region as node (i.e. we need to aggregate the antenna in the same region)); Link: phone call?. Link weight: two weights from #phone calls and duration time. (The reason to look at these two weights separately is because #phone call may refer to the business relations, while #durations may refer to the personal relations; Check if #phone call and duration time is positively related.)
+
+Antenna and Subperfectur region's locations are located by latitude and longitude. We could use the map API to convert the long/lat to the text strings. 
+
+We also can see if there are temporal patterns, i.e.  hour-of-day, day-of-week
