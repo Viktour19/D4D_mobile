@@ -1,0 +1,19 @@
+N'zi-Comoé	-4.2364	7.11345
+Fromager	-5.797355	6.150145
+Denguélé	-7.36492	9.496075
+Bafing	-7.657355	8.456155
+Moyen-Cavally	-7.785585	6.29871
+Moyen-Comoé	-3.43707	6.56186
+Sud-Comoé	-3.29999	5.6663
+Worodougou	-6.286565	8.409665
+Bas-Sassandra	-6.07215	5.24013
+Lagunes	-4.444025	5.738665
+Dix-Huit Montagnes	-7.72511	7.3664
+Agnéby	-4.0278	6.115655
+Vallée du Bandama	-4.85379	8.33183
+Lacs	-5.152255	6.89229
+Savanes	-5.37533	9.63036
+Haut-Sassandra	-6.51216	7.01358
+Sud-Bandama	-5.489505	5.63766
+Zanzan	-3.40679	8.508825
+Marahoué	-5.92273	7.115175

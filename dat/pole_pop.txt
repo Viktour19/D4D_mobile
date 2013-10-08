@@ -1,0 +1,10 @@
+South-West	1395251
+North	929673
+Centre	1110162
+West	1445243
+Centre-North	1080509
+Centre-West	2169776
+North-West	740160
+Centre-East	394761
+North-East	701005
+South	5400132

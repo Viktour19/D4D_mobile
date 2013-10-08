@@ -1,0 +1,10 @@
+Centre-North	Vallée du Bandama
+Centre-West	Haut-Sassandra,Marahoué,Fromager
+North-East	Zanzan
+North	Savanes
+West	Dix-Huit Montagnes,Moyen-Cavally
+South	Sud-Bandama,Lagunes,Agnéby,Sud-Comoé
+South-West	Bas-Sassandra
+Centre	N'zi-Comoé,Lacs
+Centre-East	Moyen-Comoé
+North-West	Bafing,Denguélé,Worodougou

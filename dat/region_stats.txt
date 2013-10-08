@@ -1,0 +1,20 @@
+Region	Abbr.	Capital	A (km²)	C 1988-03-01	C 1998-12-20
+Agnéby	AG	Agboville	9,234	441,363	525,211
+Bafing	BF	Touba	8,922	107,886	139,251
+Bas-Sassandra	BS	San Pédro	26,440	647,696	1,395,251
+Denguélé	DE	Odienné	20,997	169,764	222,446
+Dix-Huit Montagnes	DH	Man	16,782	695,778	936,510
+Fromager	FR	Gagnoa	6,903	417,485	542,992
+Haut-Sassandra	HT	Daloa	15,242	723,708	1,071,977
+Lacs	LC	Yamoussoukro	8,875	362,244	476,235
+Lagunes	LG	Abidjan	13,323	2,672,114	3,733,413
+Marahoué	MR	Bouaflé	8,698	401,752	554,807
+Moyen-Cavally	MV	Guiglo	14,268	272,489	508,733
+Moyen-Comoé	MC	Abengourou	6,921	300,407	394,761
+N'zi-Comoé	NC	Dimbokro	19,242	555,951	633,927
+Savanes	SV	Korhogo	40,210	745,816	929,673
+Sud-Bandama	SB	Divo	10,677	503,877	682,021
+Sud-Comoé	SC	Aboisso	7,252	225,895	459,487
+Vallée du Bandama	VB	Bouaké	28,518	812,738	1,080,509
+Worodougou	WR	Séguéla	22,166	244,597	378,463
+Zanzan	ZA	Bondoukou	38,251	514,134	701,005

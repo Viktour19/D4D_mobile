@@ -1,0 +1,10 @@
+South-West	106
+North	46
+Centre	106
+West	61
+Centre-North	49
+Centre-West	149
+North-West	45
+Centre-East	35
+North-East	36
+South	589

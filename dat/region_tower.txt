@@ -1,0 +1,19 @@
+N'zi-Comoé	50
+Fromager	44
+Denguélé	12
+Bafing	9
+Moyen-Cavally	27
+Moyen-Comoé	35
+Sud-Comoé	39
+Worodougou	24
+Bas-Sassandra	106
+Lagunes	463
+Dix-Huit Montagnes	34
+Agnéby	42
+Vallée du Bandama	49
+Lacs	56
+Savanes	46
+Haut-Sassandra	68
+Sud-Bandama	45
+Zanzan	36
+Marahoué	37

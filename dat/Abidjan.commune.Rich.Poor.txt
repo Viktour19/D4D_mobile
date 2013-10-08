@@ -1,0 +1,14 @@
+Cocody	1
+Yopougon	1
+Abobo	1
+Plateau	1
+Marcory	-1
+Port-Bouët	1
+Adjame	-1
+Treichville	-1
+Koumassi	0
+Attecoube	0
+Abidjan	0
+Anyama	0
+Songon-Agban	0
+Bingerville	0
