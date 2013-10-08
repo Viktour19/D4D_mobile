@@ -1,0 +1,29 @@
+baseDir = "Users/diavy/Desktop/geo_visulization";
+//Read airports with Id, city, and location
+CSVReader tairportRaw file: "airports.dat";
+tairport = select Val.toInt(col1) id,
+		col3 city,
+		col4 ctry,
+		Val.toDouble(col7, 0.0) lat,
+		Val.toDouble(col8, 0.0) lon
+		from tairportRaw;
+
+//Read routes with from and to city IDs
+CSVReader trouteRaw file: "routes.dat";
+trouteAll = select rownum() rteID,
+		Val.toInt(col4, -1) fromID,
+		Val.toInt(col6, -1) toID
+	from trouteRaw;
+
+//Keep only a single route for each city pair
+troute = select distinct fromID, toID from trouteAll;
+
+//--compute route vectors by joining routes & airports
+troute2 = select
+	fromID, a1.city fromCity, a1.ctry fromCtry, a1.lat fromLat, a1.lon fromLon,
+	toID, a2.city toCity, 	  a2.ctry toCtry,   a2.lat toLat,   a2.lon toLon
+	from troute r
+	join tairport a1 on r.fromID == a1.id
+	join tairport a2 on r.toID   == a2.id;
+
+CSVWriter troute2 colNames: file: "routeLine.csv";

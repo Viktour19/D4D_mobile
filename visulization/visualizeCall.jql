@@ -1,0 +1,36 @@
+baseDir = ".";
+// Plot a global map of Air Routes
+
+CSVReader troute hasColNames: file: "sorted_dept_CDR.csv";
+trte = select  
+		Val.toDouble(fromLon) fromLon, Val.toDouble(fromLat) fromLat,
+		Val.toDouble(toLon)   toLon,   Val.toDouble(toLat)   toLat,
+		Val.toDouble(weight) weight
+	from troute;
+
+//  Generate geodetic arcs
+tlines = select  line, weight
+	with {
+	  line = Geodetic.split180(Geodetic.arc(fromLon, fromLat, toLon, toLat, 2));}
+	from trte order by weight desc;
+
+// Colour-theme arcs by length
+tplot = select line,
+	Color.interpolate("ffffff", "0000ff", "000080",  weight*15) lineColor,
+	//'ff0000' lineColor,
+	0.1 lineWidth
+	from tlines;
+
+// Plot world country polygons and borders for context
+ShapefileReader tworld file: "CDI_boundaries/CDI_boundaries.shp";
+tworldLine = select GEOMETRY, "22222277" lineColor, 1 lineWidth from tworld;
+tworldFill = select GEOMETRY, "333333"	fillColor from tworld;
+extent = BOX(-8.599302 10.736642, -2.494897 4.357067);
+width = 400;
+Plot	width: width	height: width
+	data: tworldFill
+	data: tplot
+	data: tworldLine
+	extent: val(extent)
+	//background: "FFFFFF"
+	file: "calls.png";

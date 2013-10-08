@@ -1,0 +1,3 @@
+baseDir = "Users/diavy/Desktop/geo_visulization"
+//Read airports with Id, city, and location
+//CSVReader tairportRaw file: "airports.dat";

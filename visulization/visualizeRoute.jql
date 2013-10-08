@@ -1,0 +1,33 @@
+baseDir = "Users/diavy/Desktop/geo_visulization";
+// Plot a global map of Air Routes
+
+CSVReader troute hasColNames: file: "routeLine.csv";
+trte = select   fromCity, toCity,
+		Val.toDouble(fromLon) fromLon, Val.toDouble(fromLat) fromLat,
+		Val.toDouble(toLon)   toLon,   Val.toDouble(toLat)   toLat
+	from troute;
+
+//  Generate geodetic arcs
+tlines = select fromCity, toCity, line, Geom.length(line) len
+	with {
+	  line = Geodetic.split180(Geodetic.arc(fromLon, fromLat, toLon, toLat, 2));}
+	from trte order by len desc;
+
+// Colour-theme arcs by length
+tplot = select line,
+	Color.interpolate("ffffff", "0000ff", "000080", len / 80.0) lineColor,
+	0.4 lineWidth
+	from tlines;
+
+// Plot world country polygons and borders for context
+ShapefileReader tworld file: "world/world.shp";
+tworldLine = select GEOMETRY, "22222277" lineColor from tworld;
+tworldFill = select GEOMETRY, "333333"	fillColor from tworld;
+
+width = 4000;
+Plot	width: width	height: width / 2
+	extent: LINESTRING(-180 -90, 180 90)
+	data: tworldFill
+	data: tplot
+	data: tworldLine
+	file: "routes.png";
